@@ -4,11 +4,9 @@ var add = document.getElementById('addElem')
 
 //listener button
 add.addEventListener('click', function() {
-    var element = document.createElement('li');
     
     //teksty wewnatrz listy
-    list.innerHTML += 'item ' + document.getElementsByTagName('li').length;
+    list.innerHTML += '<li>item ' + document.getElementsByTagName('li').length; + '</li>';
 
-    //dodanie elementu do listy
-    list.appendChild(element);
+
 });
